@@ -1,14 +1,10 @@
 import Image from "next/image";
-import Link from "next/link";
+import Navbar from "./Organism/navbar";
 
 export default function Home() {
   return (
     <div className="min-h-screen font-sans text-white shadow-xl bg-gradient-to-br from-gray-900 via-black to-gray-900">
-      <div className="absolute space-x-2 navbar top-4 right-4">
-        <Link href="/login" className="btn btn-ghost text-md">Login</Link>
-        <span>|</span>
-        <Link href="/register" className="btn btn-ghost text-md">Register</Link>
-      </div>
+      <Navbar />
       <main className="max-w-6xl p-8 mx-auto sm:p-12">
         {/* Header */}
         <div className="flex flex-col items-center gap-6 mb-12 text-center sm:items-start sm:text-left">
